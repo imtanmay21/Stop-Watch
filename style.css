@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root {
+    --primary-color: #fff;
+}
+
+/* Utilities */
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--primary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    font-size: 10rem;
+    border: 10px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 2.7rem 3.5rem;
+    padding-bottom: 3.2rem;
+}
+
+/* Buttons */
+.btn {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    margin-right: 1.7rem;
+    transition: all 0.4s ease;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: #39A2DB;
+}
+
+/* Styling */
+#main {
+    overflow: auto;
+    height: 100vh;
+    background: url('./main-bg.png') center center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#timer {
+    margin: 2rem 0;
+    font-size: 5rem;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    flex-grow: 1;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+    
+    /* Utilities */
+    i {
+        font-size: 7rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.7rem 1.5rem;
+        margin-right: 0.4rem;
+    }
+
+    /* Styling */
+    #timer {
+        font-size: 3.5rem;
+        margin: 1.5rem 0;
+    }
+
+    ul li:last-child .btn {
+        margin-right: 0;
+    }
+
+}
